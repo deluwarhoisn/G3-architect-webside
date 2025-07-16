@@ -1,25 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 .work-sans-fonts {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:400;
-  font-style:normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-main{
+
+main {
     max-width: 1440px;
     margin: 0 auto;
-    
+
 }
-main > section{
+
+main>section {
     margin-top: 130px;
 }
-.text-primary{
+
+.text-primary {
     color: rgba(255, 144, 14, 1);
 }
-.btn-primary{
+
+.btn-primary {
     background-color: rgba(255, 144, 14, 1);
     color: white;
     padding: 20px 25px;
@@ -28,78 +31,96 @@ main > section{
     font-weight: 600;
     border: none;
 }
-.text-gray{
- color: #424242;
+
+.text-gray {
+    color: #424242;
 }
 
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
-.bg-light{
-    background:rgba(255, 144, 14, 0.1);
+
+.bg-light {
+    background: rgba(255, 144, 14, 0.1);
 }
-.display-flix{
+
+.display-flix {
     display: flex;
 }
-.navbar{
+
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
     margin-right: 30px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-weight: 500;
 }
-.navbar, .banner{
+
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 
 }
-.section-title{
+
+.section-title {
     font-size: 2.8rem;
 }
-.brand{
+
+.brand {
     font-weight: 700;
     font-size: 3rem;
 }
-.banner-containt{
+
+.banner-containt {
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner-titel{
+
+.banner-titel {
     font-weight: 700;
     font-size: 4rem;
 }
-.banner-image{
+
+.banner-image {
     width: 100%;
 }
-.temse{
+
+.temse {
     align-items: center;
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.our-features{
+
+.our-features {
     margin-left: 130px;
     max-width: 530px;
 }
 
-#Quick-list{
+#Quick-list {
     font-weight: 500;
 }
-.facts-container{
- display: grid;
- grid-template-columns: repeat(4, 1fr);
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid #ff900f;
     width: 240px;
     height: 240px;
@@ -107,42 +128,78 @@ main > section{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
-.fact-description{
+
+.fact-description {
     max-width: 540px;
+}
+
+.Sponsors-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.Sponsors-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.Sponsors-company img{
+    filter: grayscale(100%)
 }
 /* responciv media quer */
 @media screen and (max-width:576px) {
+
     .navbar,
-     .navlinks, 
-     .temse{
+    .navlinks,
+    .temse {
         flex-direction: column;
     }
-    .team-img-container{
+
+    .team-img-container,
+    .facts-container, .Sponsors-company {
         grid-template-columns: repeat(1, 1fr);
     }
-    .our-features{
+
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .Sponsors-company{
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .our-features {
         margin-left: 20px;
     }
 }
+
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .temse{
+    .temse {
         flex-direction: column;
     }
-    .our-features{
+
+    .our-features {
         margin: 50px auto;
+    }
+    .Sponsors-company, .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
